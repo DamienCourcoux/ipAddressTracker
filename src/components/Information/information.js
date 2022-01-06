@@ -2,7 +2,7 @@ import './information.css';
 
 function Information() {
   return (
-    <section className="Information">
+    <section className="information">
       Information
     </section>
   );

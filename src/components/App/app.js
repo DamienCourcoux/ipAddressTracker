@@ -6,8 +6,7 @@ import './app.css';
 
 function App() {
   return (
-    <div className="App">
-      ip address tracker
+    <div className="app">
       <SearchBar />
       <Information />
       <Map />

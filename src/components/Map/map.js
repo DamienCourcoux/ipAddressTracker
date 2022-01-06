@@ -2,7 +2,7 @@ import './map.css';
 
 function Map() {
   return (
-    <section className="Map">
+    <section className="map">
       Map
     </section>
   );
