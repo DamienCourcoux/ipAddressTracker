@@ -28,6 +28,7 @@
     width: 250px;
     display: flex;
     flex-direction: column;
+    transition: all 1s;
 }
 
 .information__list--item-title {
@@ -45,4 +46,27 @@
 
 .information__list--item:last-child > .information__list--item-info {
     border: none;
+}
+
+@media screen and (max-width: 1063px) {
+    .information__list--item {
+        padding: 1rem 0 1rem 1rem;
+        width: 195px;
+    }
+}
+
+@media screen and (max-width: 857px) {
+    .information__list {
+        padding: .5rem;
+    }
+    .information__list--item {
+        width: 270px;
+        padding: 1rem 0;
+        align-items: center;
+    }
+
+    .information__list--item-info {
+        padding: 0;
+        border: none;
+    }
 }
