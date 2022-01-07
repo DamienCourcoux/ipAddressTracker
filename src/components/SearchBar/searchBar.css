@@ -8,14 +8,14 @@
 .searchBar__title {
     color: #fff;
     font-weight: bold;
-    font-size: 1.2rem;
-    padding: 1rem;
+    font-size: 1.5rem;
+    padding: 1.5rem;
 }
 
 .searchBar__form {
     display: flex;
     justify-content: center;
-    padding: 1rem 1rem 8rem 1rem;
+    padding: 0 1rem 7rem 1rem;
 }
 
 .searchBar__form--input {
@@ -34,6 +34,10 @@
     border: none;
     border-radius: 0 10px 10px 0;
     font-size: 1.125rem;
-    padding: .7rem;
+    padding: .7rem 1rem;
+    background: #2b2b2b;
+}
+
+.searchBar__form--button:hover {
     background: #000;
 }
