@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .information__list {
@@ -21,6 +20,7 @@
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    z-index: 2;
 }
 
 .information__list--item {
