@@ -6,3 +6,25 @@
 .leaflet-top {
     bottom: 0 !important;
 }
+
+.waiting {
+    background: #2b2b2b;
+    color: #969696;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.isError {
+    color: #E03E45;
+    margin: .5rem;
+}
+
+.isErrorSmall {
+    font-size: 1rem;
+    font-style: italic;
+}

@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import {
   createChangeInputValue,
+  createSearchIpAddress,
 } from '../../store/action';
 
 import Arrow from '../../images/icon-arrow.svg';
@@ -20,7 +21,7 @@ function SearchBar() {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    // TODO mettre la requete de recherche ip (middleware)
+    dispatch(createSearchIpAddress());
   };
 
   const handleInputChange = (event) => {
@@ -37,7 +38,7 @@ function SearchBar() {
         <input 
           className='searchBar__form--input' 
           type="text"
-          placeholder="Recherchez n'importe quelle adresse IP ou domaine"
+          placeholder="Recherchez n'importe quelle adresse IP"
           value={inputValue}
           onChange={handleInputChange}
           ref={inputRef}
@@ -45,6 +46,7 @@ function SearchBar() {
         <button 
           className='searchBar__form--button' 
           type="submit"
+          onClick={handleFormSubmit}
         >
           <img src={Arrow} alt="Flèche pour rechercher l'IP" />
         </button>
