@@ -9,9 +9,11 @@
 
 .waiting {
     background: #2b2b2b;
-    color: #969696;
-    font-size: 2rem;
-    font-weight: bold;
+    background-image: url('../../images/world-map-g4743df0b4_1280.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-blend-mode: multiply;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -27,4 +29,22 @@
 .isErrorSmall {
     font-size: 1rem;
     font-style: italic;
+    color: #969696;
+}
+
+.waiting__title {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #5976de 8%, #2b2b2b 18%, #969696 33%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 1000px 100%;
+    animation: shimmer 2.2s linear infinite forwards;
+}
+
+@media screen and (max-width: 587px) {
+    .waiting {
+        justify-content: flex-end;
+        padding-bottom: 4rem;
+    }
 }

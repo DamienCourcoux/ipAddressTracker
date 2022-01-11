@@ -65,7 +65,7 @@ const reducer = (state = initialState, action = {}) => {
                 timezone: '',
                 isp: '',
                 isError: true,
-                isLoad: false
+                isLoad: false,
             };
 
         case SEARCH_IP_ADDRESS_LOAD:

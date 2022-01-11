@@ -68,6 +68,7 @@
 @media screen and (max-width: 857px) {
     .information__list {
         padding: .5rem;
+        background: rgba(255,255,255,0.7);
     }
     .information__list--item {
         width: 270px;

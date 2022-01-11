@@ -49,7 +49,7 @@ function Map() {
                     <small className="isErrorSmall">(Veuillez écrire une ip correcte)</small>
                   </>
                 )
-                : isLoad ? <img src={Loader} alt="Globe loader" /> : 'En attente...'
+                : isLoad ? <img src={Loader} alt="Globe loader" /> : <p className="waiting__title">En attente...</p>
               }
             </div>
         )
