@@ -21,7 +21,9 @@ const informationMiddleware = (store) => (next) => (action) => {
                 .catch(() => {
                     store.dispatch(createSearchIpAddressError());
                 });
-            } 
+            } else {
+                store.dispatch(createSearchIpAddressError());
+            }
 
             
             next(action);
