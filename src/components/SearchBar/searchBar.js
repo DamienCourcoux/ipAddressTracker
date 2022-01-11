@@ -11,6 +11,7 @@ import './searchBar.css';
 
 function SearchBar() {
   const inputValue = useSelector((state) => state.inputValue);
+  const isLoad = useSelector((state) => state.isLoad);
 
   const dispatch = useDispatch();
   const inputRef = useRef(null);
@@ -48,7 +49,11 @@ function SearchBar() {
           type="submit"
           onClick={handleFormSubmit}
         >
-          <img src={Arrow} alt="Flèche pour rechercher l'IP" />
+          {
+            isLoad
+            ? <div id="circleSpinner"></div>
+            : <img src={Arrow} alt="Flèche pour rechercher l'IP" />
+          }
         </button>
       </form>
     </section>

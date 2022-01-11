@@ -2,6 +2,7 @@ export const CHANGE_INPUT_VALUE = 'CHANGE_INPUT_VALUE';
 export const SEARCH_IP_ADDRESS = 'SEARCH_IP_ADDRESS';
 export const SEARCH_IP_ADDRESS_SUCCESS = 'SEARCH_IP_ADDRESS_SUCCESS';
 export const SEARCH_IP_ADDRESS_ERROR = 'SEARCH_IP_ADDRESS_ERROR';
+export const SEARCH_IP_ADDRESS_LOAD = 'SEARCH_IP_ADDRESS_LOAD';
 
 export const createChangeInputValue = (newValue) => ({
     type: CHANGE_INPUT_VALUE,
@@ -19,4 +20,8 @@ export const createSearchIpAddressSuccess = (payload) => ({
 
 export const createSearchIpAddressError = () => ({
     type: SEARCH_IP_ADDRESS_ERROR,
+});
+
+export const createSearchIpAddressLoad = () => ({
+    type: SEARCH_IP_ADDRESS_LOAD,
 });

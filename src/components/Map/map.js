@@ -1,6 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup, ZoomControl } from 'react-leaflet';
 import { useSelector } from 'react-redux';
 
+import Loader from '../../images/394.gif';
 import './map.css';
 
 function Map() {
@@ -10,6 +11,7 @@ function Map() {
   const postalCode = useSelector((state) => state.postalCode);
   const isSuccess = useSelector((state) => state.isSuccess);
   const isError = useSelector((state) => state.isError);
+  const isLoad = useSelector((state) => state.isLoad);
 
   const position = [lat, lng];
   
@@ -47,7 +49,7 @@ function Map() {
                     <small className="isErrorSmall">(Veuillez écrire une ip correcte)</small>
                   </>
                 )
-                : 'En attente...'
+                : isLoad ? <img src={Loader} alt="Globe loader" /> : 'En attente...'
               }
             </div>
         )

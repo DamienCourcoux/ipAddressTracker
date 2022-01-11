@@ -42,3 +42,38 @@
 .searchBar__form--button:hover {
     background: #000;
 }
+
+#circleSpinner {
+    height: 15px;
+    width: 15px;
+    border: 4px rgba(255, 255, 255, 0.25) solid;
+    border-top: 4px white solid;
+    border-radius: 50%;
+    -webkit-animation: spin2 1s infinite linear;
+            animation: spin2 1s infinite linear;
+  }
+  
+  @-webkit-keyframes spin2 {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(359deg);
+              transform: rotate(359deg);
+    }
+  }
+  @keyframes spin2 {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(359deg);
+              transform: rotate(359deg);
+      -webkit-transform: rotate(359deg);
+              transform: rotate(359deg);
+    }
+  }

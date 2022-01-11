@@ -48,6 +48,16 @@
     border: none;
 }
 
+.shimmer-text {
+    margin: 0;
+}
+
+.shimmer {
+    background: linear-gradient(to right, #5976de 8%, #2b2b2b 18%, #969696 33%);
+    background-size: 1000px 100%;
+    animation: shimmer 2.2s linear infinite forwards;
+}
+
 @media screen and (max-width: 1063px) {
     .information__list--item {
         padding: 1rem 0 1rem 1rem;
@@ -62,11 +72,15 @@
     .information__list--item {
         width: 270px;
         padding: 1rem 0;
-        align-items: center;
+        text-align: center;
     }
 
     .information__list--item-info {
         padding: 0;
         border: none;
+    }
+
+    .shimmer-text {
+        margin-top: 1rem;
     }
 }

@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { ShimmerText } from 'react-shimmer-effects';
 
 import './information.css';
 
@@ -14,19 +15,19 @@ function Information() {
       <ul className="information__list">
         <li className="information__list--item">
           <span className="information__list--item-title">Address IP</span>
-          <p className="information__list--item-info">{ ip ? ip : 'En attente...'}</p>
+          <div className="information__list--item-info">{ ip ? ip : <ShimmerText className={'test'} line={2} gap={10} />}</div>
         </li>
         <li className="information__list--item">
           <span className="information__list--item-title">Emplacement</span>
-          <p className="information__list--item-info">{ city ? city + ' ' + postalCode : 'En attente...'}</p>
+          <div className="information__list--item-info">{ city ? city + ' ' + postalCode : <ShimmerText className={'test'} line={2} gap={10} />}</div>
         </li>
         <li className="information__list--item">
           <span className="information__list--item-title">Fuseau horaire</span>
-          <p className="information__list--item-info">{ timezone ? 'UTC ' + timezone : 'En attente...'}</p>
+          <div className="information__list--item-info">{ timezone ? 'UTC ' + timezone : <ShimmerText className={'test'} line={2} gap={10} />}</div>
         </li>
         <li className="information__list--item">
           <span className="information__list--item-title">FAI</span>
-          <p className="information__list--item-info">{ isp ? isp : 'En attente...'}</p>
+          <div className="information__list--item-info">{ isp ? isp : <ShimmerText className={'test'} line={2} gap={10} />}</div>
         </li>
       </ul>
     </section>

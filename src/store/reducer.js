@@ -2,6 +2,7 @@ import {
     CHANGE_INPUT_VALUE,
     SEARCH_IP_ADDRESS_SUCCESS,
     SEARCH_IP_ADDRESS_ERROR,
+    SEARCH_IP_ADDRESS_LOAD,
 } from './action';
 
 const initialState = {
@@ -15,6 +16,7 @@ const initialState = {
     isp: '',
     isSuccess: false,
     isError: false,
+    isLoad: false,
 
 };
 
@@ -24,12 +26,22 @@ const reducer = (state = initialState, action = {}) => {
             return {
                 ...state,
                 inputValue: action.newValue,
+                lat: '',
+                lng: '',
+                ip: '',
+                city: '',
+                postalCode: '',
+                timezone: '',
+                isp: '',
                 isSuccess: false,
+                isError: false,
+                isLoad: false,
             };
         
         case SEARCH_IP_ADDRESS_SUCCESS:
             return {
                 ...state,
+                inputValue: '',
                 lat: action.payload.location.lat,
                 lng: action.payload.location.lng,
                 ip: action.payload.ip,
@@ -38,14 +50,28 @@ const reducer = (state = initialState, action = {}) => {
                 timezone: action.payload.location.timezone,
                 isp: action.payload.isp,
                 isSuccess: true,
-                inputValue: '',
+                isLoad: false,
             };
 
         case SEARCH_IP_ADDRESS_ERROR:
             return {
                 ...state,
-                isError: true,
                 inputValue: '',
+                lat: '',
+                lng: '',
+                ip: '',
+                city: '',
+                postalCode: '',
+                timezone: '',
+                isp: '',
+                isError: true,
+                isLoad: false
+            };
+
+        case SEARCH_IP_ADDRESS_LOAD:
+            return {
+                ...state,
+                isLoad: true,
             };
     
         default:
