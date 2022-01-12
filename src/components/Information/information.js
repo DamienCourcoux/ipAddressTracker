@@ -15,19 +15,19 @@ function Information() {
       <ul className="information__list">
         <li className="information__list--item">
           <span className="information__list--item-title">Address IP</span>
-          <div className="information__list--item-info">{ ip ? ip : <ShimmerText className={'test'} line={2} gap={10} />}</div>
+          <div className="information__list--item-info">{ ip ? ip : <ShimmerText className={'shimmerAnimation'} line={2} gap={10} />}</div>
         </li>
         <li className="information__list--item">
           <span className="information__list--item-title">Emplacement</span>
-          <div className="information__list--item-info">{ city ? city + ' ' + postalCode : <ShimmerText className={'test'} line={2} gap={10} />}</div>
+          <div className="information__list--item-info">{ city ? city + ' ' + postalCode : <ShimmerText className={'shimmerAnimation'} line={2} gap={10} />}</div>
         </li>
         <li className="information__list--item">
           <span className="information__list--item-title">Fuseau horaire</span>
-          <div className="information__list--item-info">{ timezone ? 'UTC ' + timezone : <ShimmerText className={'test'} line={2} gap={10} />}</div>
+          <div className="information__list--item-info">{ timezone ? 'UTC ' + timezone : <ShimmerText className={'shimmerAnimation'} line={2} gap={10} />}</div>
         </li>
         <li className="information__list--item">
           <span className="information__list--item-title">FAI</span>
-          <div className="information__list--item-info">{ isp ? isp : <ShimmerText className={'test'} line={2} gap={10} />}</div>
+          <div className="information__list--item-info">{ isp ? isp : <ShimmerText className={'shimmerAnimation'} line={2} gap={10} />}</div>
         </li>
       </ul>
     </section>

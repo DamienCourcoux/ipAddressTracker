@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Frontend Mentor - Solution de suivi des adresses IP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Il s'agit d'une solution au [défi du traqueur d'adresse IP sur Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Les défis Frontend Mentor vous aident à améliorer vos compétences en codage en créant des projets réalistes.
 
-## Available Scripts
+## Table des matières
 
-In the project directory, you can run:
+- [Apercu](#apercu)
+  - [Le ​​defi](#le-defi)
+  - [Capture d'ecran](#capture-decran)
+  - [Liens](#liens)
+- [Mon processus](#mon-processus)
+  - [Construit avec](#construit-avec)
+  - [Ressources utiles](#ressources-utiles)
+- [Auteur](#auteur)
 
-### `npm start`
+## Apercu
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Le defi
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Les utilisateurs doivent être capables de :
 
-### `npm test`
+- [x] Afficher la mise en page optimale pour chaque page en fonction de la taille de l'écran de leur appareil
+- [x] Voir les états de survol pour tous les éléments interactifs sur la page
+- [x] Recherchez des adresses IP et consultez les informations clés et l'emplacement
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Capture d'ecran
 
-### `npm run build`
+![screenshot de l'application IP Address Tracker](src\images\screenshot.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Liens
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- URL de la solution: [https://www.frontendmentor.io/solutions/ip-address-tracker-ijPVPkeAx](https://www.frontendmentor.io/solutions/ip-address-tracker-ijPVPkeAx)
+- URL du site en direct: [https://ipaddresstracker-damiencourcoux.netlify.app/](https://ipaddresstracker-damiencourcoux.netlify.app/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Mon processus
 
-### `npm run eject`
+### Construit avec
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Balisage sémantique HTML5
+- Propriétés personnalisées CSS
+- Flexbox
+- Flux de travail axé sur le mobile
+- [React](https://reactjs.org/) - Bibliothèque JS
+- [Redux](https://redux.js.org/) - Bibliothèque JS
+- [Axios](https://www.npmjs.com/package/axios) - Requêtes HTTP
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Auteur
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- SiteWeb - [Damien Courcoux](https://www.damiencourcoux.me)
+- Frontend Mentor - [@DamienCourcoux](https://www.frontendmentor.io/profile/DamienCourcoux)
