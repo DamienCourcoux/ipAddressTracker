@@ -42,6 +42,7 @@
     border-right: 1px solid #969696;
     font-size: 1.5rem;
     height: 100%;
+    overflow-wrap: break-word;
 }
 
 .information__list--item:last-child > .information__list--item-info {

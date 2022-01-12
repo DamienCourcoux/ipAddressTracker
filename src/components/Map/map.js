@@ -9,6 +9,8 @@ function Map() {
   const lng = useSelector((state) => state.lng);
   const city = useSelector((state) => state.city);
   const postalCode = useSelector((state) => state.postalCode);
+  const region = useSelector((state) => state.region);
+  const country = useSelector((state) => state.country);
   const isSuccess = useSelector((state) => state.isSuccess);
   const isError = useSelector((state) => state.isError);
   const isLoad = useSelector((state) => state.isLoad);
@@ -34,7 +36,7 @@ function Map() {
               <Marker position={position}>
                 <Popup>
                   VOUS ÊTES ICI <br />
-                  { city + ' ' + postalCode }
+                  { city + ' ' + postalCode + ` (${region}, ${country})` }
                 </Popup>
               </Marker>
             </MapContainer>
